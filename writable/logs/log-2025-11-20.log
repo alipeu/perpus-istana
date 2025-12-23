@@ -1,0 +1,24 @@
+CRITICAL - 2025-11-20 06:52:45 --> ErrorException: Undefined variable $pager
+[Method: GET, Route: /]
+in APPPATH\Views\catalog\home.php on line 247.
+ 1 APPPATH\Views\catalog\home.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'D:\\Apps\\xampp\\htdocs\\perpus-istana\\app\\Views\\catalog\\home.php', 247)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Apps\\xampp\\htdocs\\perpus-istana\\app\\Views\\catalog\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('catalog/home', [], true)
+ 5 APPPATH\Controllers\Catalog.php(29): view('catalog/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Catalog->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Catalog))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-20 08:26:10 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "Album Foto (Warna Album Merah Putih).jpg"
+[Method: GET, Route: thumbnail/Album%20Foto%20%28Warna%20Album%20Merah%20Putih%29.jpg]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('thumbnail/Album Foto (Warna Album Merah Putih).jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('thumbnail/Album Foto (Warna Album Merah Putih).jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
